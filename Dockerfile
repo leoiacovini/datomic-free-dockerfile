@@ -5,7 +5,7 @@ ENV DATOMIC_VERSION 0.9.5661
 
 ADD https://my.datomic.com/downloads/free/${DATOMIC_VERSION} /tmp/datomic-free-${DATOMIC_VERSION}.zip
 
-RUN unzip /tmp/datomic.zip && rm /tmp/datomic.zip
+RUN unzip /tmp/datomic-free-${DATOMIC_VERSION}.zip && rm /tmp/datomic-free-${DATOMIC_VERSION}.zip
 
 WORKDIR datomic-free-${DATOMIC_VERSION}
 
